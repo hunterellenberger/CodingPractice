@@ -1,0 +1,11 @@
+Classes contain members of two types data and functions
+  - An instance of a class is known as an object
+  - Members may be public or private
+  - Public members are accessible by any part of the code
+  - Private members are accessable only within the class
+  - Protected members are accessable in inherited classes
+
+Inheritence and Polymorphism
+  - A class may have subclasses based on it
+  - A subclass may inherit members from the superclass
+  - Polymorphism describes how a function may be differently implemented within its superclass than its subclasses
