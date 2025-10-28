@@ -4,6 +4,7 @@ class Node:
         self.height = height
         self.left = None
         self.right = None
+        self.c = 0
 
     @staticmethod
     def insert(node, number):
@@ -19,7 +20,9 @@ class Node:
             Node.insert(node.left, number)
 
     @staticmethod
-    def traverse(node)
+    def traverse(root):
+        if root:
+            Node.traverse(root.left)
 
 
 if __name__ == "__main__":
