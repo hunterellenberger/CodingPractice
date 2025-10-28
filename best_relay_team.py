@@ -1,3 +1,5 @@
+import sys
+
 if __name__ == "__main__":
     people = int(input())
     racers = list()
@@ -19,7 +21,6 @@ if __name__ == "__main__":
     for _ in range(4):
         if first[0] / firstTotal > other[0] / otherTotal:
             for racer in racers:
-                print(racer)
                 if first[0] == float(racer[1]):
                     finalTeam.append(racer)
                     break
@@ -27,6 +28,9 @@ if __name__ == "__main__":
         else:
             for racer in racers:
                 if other[0] == float(racer[2]):
-                    finalTeam.append(racer[0])
+                    finalTeam.append(racer)
                     break
             other.pop(0)
+
+    totalTime = sys.float_info.max
+    for member in finalTeam:
