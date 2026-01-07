@@ -33,4 +33,3 @@ if __name__ == "__main__":
             other.pop(0)
 
     totalTime = sys.float_info.max
-    for member in finalTeam:
